@@ -1,10 +1,10 @@
 def above(movies):
     ch = False
     for x in range(0, len(movies) - 1):
-        if movies[x]["imdb"] > 5.5:
-            ch = True
-            print(movies[x]["name"], ch)
-        ch = False
+        if (movies[x]["category"] == "Thriller") or (movies[x]["imdb"] > 4 and movies[x]["imdb"] < 6) :
+            
+            print(movies[x]["name"])
+        
     
     
 
