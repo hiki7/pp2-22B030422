@@ -21,7 +21,7 @@ second = current_time.second
 minute = current_time.minute
 
 angle1 = 0 - (second * 6)
-angle2 = 0 - (minute * 6) 
+angle2 = 0 - (minute * 6) - 6
 
 while True:
     for event in pygame.event.get():
