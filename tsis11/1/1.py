@@ -171,7 +171,10 @@ while check:
                     back_com = str(input('Type "back" in order to return to the list of the commands: '))
                     if back_com == "back":
                         back = True
-                    
+            else:
+                back_com = str(input('Incorrect command! Type "back" and try again: '))
+                if back_com == "back":
+                        back = True
         #delete
         if command == "d" or command == "D":
             back = False
@@ -213,6 +216,10 @@ while check:
                 back_com = str(input('Type "back" in order to return to the list of the commands: '))
                 if back_com == "back":
                     back = True
+            else:
+                back_com = str(input('Incorrect command! Type "back" and try again: '))
+                if back_com == "back":
+                        back = True
         
         #query
         if command == "q" or command == "Q":
@@ -260,6 +267,10 @@ while check:
                 back_com = str(input('Type "back" in order to return to the list of the commands: '))
                 if back_com == "back":
                     back = True
+            else:
+                back_com = str(input('Incorrect command! Type "back" and try again: '))
+                if back_com == "back":
+                        back = True
         
         #display
         if command == "s" or command == "S":
@@ -275,6 +286,8 @@ while check:
         if command == "f" or command == "F":
             command = ''
             check = False
+        else:
+            back = True
         
 
 conn.commit()
